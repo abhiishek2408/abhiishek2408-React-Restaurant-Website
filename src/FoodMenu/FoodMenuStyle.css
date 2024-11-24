@@ -1,0 +1,270 @@
+
+
+
+.menu-container {
+    padding: 20px;
+    color: #000;
+    background-color: #ffffff;
+  }
+  
+ 
+  .food-type-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+
+  .menu-item-cards-flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  
+  .menu-item-card-flex {
+    background-color: white; 
+    border: 1px solid #ccc;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.05); 
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  .menu-item-card-flex:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
+  
+
+  .image-container {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    background-size: cover;
+  }
+
+
+  .item-name {
+    font-size: 1.3em;
+    color: #000;
+     font-family: 'Roboto', sans-serif; 
+}
+  
+
+  .name-rating {
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif; 
+    margin-top: 10px;
+    color: #000;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .name-rating h3 {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+  }
+
+  .name-rating p {
+    color: #000;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+  }
+  
+  
+
+
+
+
+#menuModal.menu-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 100%;
+    margin-top: -30px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    z-index: 1000;
+}
+
+  .menu-modal-content {
+      background-color: rgb(255, 255, 255);
+      border-radius: 8px;
+      padding: 70px;
+      max-width: 1400px;
+      width: 90%;
+      height: 90%;
+      position: relative;
+    }
+    
+    .menu-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.menu-modal-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.menu-product-detail {
+     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.menu-product-content {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    position: relative;
+    top: -22px; 
+}
+
+
+.menu-product-content .menu-product-image {
+    min-width: 300px;
+    text-align: center;
+    margin-right: 20%;
+    margin-top: 3%;
+}
+
+.menu-product-content .menu-product-image img {
+    max-width: 80%;
+    margin-right: 10%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.menu-additional-info {
+    margin-top:20px;
+    margin-left:13%;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    border-radius: 4px;
+    list-style: none;
+}
+
+.menu-additional-info ul li {
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu-product-info {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.menu-product-info h2 {
+    color: #ff6f00;
+    margin: 0 0 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu-product-info p {
+    color: #0e0d0d;
+    font-size: .9rem;
+    margin: 0 0 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.item-price p{
+  color: rgb(246, 5, 162);
+  font-size: 1.5rem;
+}
+
+.rating {
+  font-size: 1.2em;
+  color: #ff6200;
+  margin: 10px 0;
+  font-family: 'Lato', sans-serif;
+}
+
+
+textarea {
+    width: 200px; 
+    height: 50px; 
+    resize: none; 
+}
+
+
+
+.quantity-selector {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.quantity-selector button {
+    background-color:black;
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin: 0 -2px;
+    
+}
+
+.quantity-selector input {
+background-color:black;
+    border:none;
+    width: 40px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    margin: 0 -2px;
+}
+  
+  
+  
+  
+  .add-to-cart {
+    background-color: #ff7518;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #d98c17;
+  }
+  
